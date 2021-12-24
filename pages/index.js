@@ -1,6 +1,5 @@
 
-import { Navbar, Footer, Hero, Breadcrumbs } from "@components/common"
-import { CourseList } from "@components/course"
+import { Hero, Breadcrumbs } from "@components/common"
 import { BaseLayout } from "@components/layout"
 import { OrderCard } from "@components/order"
 import { EthRates, WalletBar } from "@components/web3"
@@ -13,7 +12,7 @@ export default function Home() {
             <WalletBar />
             <EthRates />
             <OrderCard />
-            <CourseList />         
+                    
       </>  
   )
 }
