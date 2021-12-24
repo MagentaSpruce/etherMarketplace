@@ -7,12 +7,12 @@ import {
 import { BaseLayout } from "@components/layout";
 import { getAllCourses } from "@content/courses/fetcher";
 
-export default function Course() {
+export default function Course({course}) {
 
   return (
     <>
     <div className="py-4">
-      <CourseHero />
+      <CourseHero title={course.title} description={course.description} image={course.coverImage} />
     </div>
       <Keypoints />
       <Curriculum />
